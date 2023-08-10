@@ -1,0 +1,103 @@
+/* normalize */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Light-gray);
+  font-size: 15px;
+}
+
+.card {
+  width: 324px;
+  height: 500px;
+  border-radius: 15px;
+  margin: 80px auto;
+  margin-bottom: 40px;
+  overflow: hidden;
+  background-color: var(--White);
+  transition-duration: 2000ms;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.23);
+}
+
+.card__img {
+  margin: 16px;
+}
+
+.card__qr {
+  border-radius: 12px;
+}
+
+.card__text {
+  margin: 20px 30px 40px;
+  text-align: center;
+}
+
+.card__tittle {
+  font-weight: 600;
+  color: var(--Dark-blue);
+}
+
+.card__description {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--Grayish-blue);
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
